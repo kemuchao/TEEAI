@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="带有详情的Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufU-Cu-Zdt">
+                        <rect key="frame" x="30" y="0.0" width="116" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWi-jC-q4D">
+                        <rect key="frame" x="241.5" y="0.5" width="34" height="43.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="Z0N-Fe-qfo">
+                        <rect key="frame" x="280.5" y="13.5" width="9.5" height="17.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z0N-Fe-qfo" secondAttribute="height" multiplier="5:9" id="xdK-je-AqW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QWi-jC-q4D" firstAttribute="height" secondItem="ufU-Cu-Zdt" secondAttribute="height" id="7TE-gl-aiD"/>
+                    <constraint firstItem="ufU-Cu-Zdt" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="IWs-mS-F1W"/>
+                    <constraint firstItem="ufU-Cu-Zdt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NLY-XF-61X"/>
+                    <constraint firstItem="ufU-Cu-Zdt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="QKg-OP-ueg"/>
+                    <constraint firstItem="Z0N-Fe-qfo" firstAttribute="leading" secondItem="QWi-jC-q4D" secondAttribute="trailing" constant="5" id="bDK-of-dSs"/>
+                    <constraint firstItem="Z0N-Fe-qfo" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.4" id="dhl-FG-pln"/>
+                    <constraint firstItem="Z0N-Fe-qfo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iia-Ih-RZV"/>
+                    <constraint firstAttribute="trailing" secondItem="Z0N-Fe-qfo" secondAttribute="trailing" constant="30" id="jCs-SN-Zfq"/>
+                    <constraint firstItem="QWi-jC-q4D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y1e-Kc-VIx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelDetail" destination="QWi-jC-q4D" id="B2y-Qx-Tt7"/>
+                <outlet property="labelTitle" destination="ufU-Cu-Zdt" id="5TI-Dt-jZv"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-67"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="16" height="26"/>
+    </resources>
+</document>

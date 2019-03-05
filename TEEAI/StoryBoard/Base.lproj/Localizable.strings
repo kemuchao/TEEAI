@@ -1,0 +1,329 @@
+/* 
+  Localizable.strings
+  MifiManager
+
+  Created by notion on 2018/4/16.
+  Copyright © 2018年 notion. All rights reserved.
+*/
+//Request setting
+"ReachableFail" = "当前无网络链接";
+"ReachableWifi" = "已连接上MIFI设备";
+"connecting" = "正在连接";
+"dot" = "。。。";
+"loading" = "请稍候，正在加载";
+"saving" = "正在提交数据";
+"download" = "加载中";
+"confirm" = "确定";
+"cancel" = "取消";
+"detail" = "详情";
+"passworw" = "密码";
+"failCommonError" = "请输入4-10位字符或数字";
+"failUnequal" = "请确保输入相同字符串";
+"warning" = "提示";
+"warningWifi" = "请确保已连接MIFI随身路由器";
+"Undefined" = "未设置";
+"needLogin" = "该帐号已在其他终端登录，您需要重新登录才能使用。是否前往登录?";
+"needRelogin" = "帐号状态已变，需要重新登录。";
+"relogin" = "重新登录";
+
+"successToast" = "操作成功";
+"failToast" = "操作失败";
+"warningEmpty" = "输入数据不能为空";
+//登录页面本地化
+"PlaceholderName" = "请输入用户名";
+"PlaceholderPsw" = "请输入密码";
+"login" = "一键连接";
+"tool" = "工具箱";
+"connectWarning" = "请链接MIFI设备";
+"connectButton" = "手动设置网络";
+"loginFail" = "账户或密码错误";
+//首页
+"logoIcon" = "iconLogoCN";
+"mainTitle" = "首页";
+"routerCharge" = "路由器剩余电量";
+"routerCharging" = "正在充电";
+"device" = "连接设备";
+"deviceUnit" = "台";
+"message" = "未读信息";
+"messageUnit" = "条";
+"deviceList" = "连接设备";
+"messageList" = "未读短信";
+"totalFlow" = "总流量";
+"totalBattery" = "总电量";
+"routerDataUsed" = "路由器已用电量";
+"setFlow" = "设置流量";
+
+//设置
+"setting" = "设置";
+"settingWifi" = "WiFi设置";
+"settingMobilNet" = "移动网络设置";
+"settingPsw" = "管理密码设置";
+"settingSmart" = "智能管理";
+"settingUpdate" = "更新";
+"settingRouterManager" = "路由器管理";
+"settingRouterTest" = "路由器检测";
+"settingFeedBack" = "用户反馈";
+"settingAbout" = "关于";
+
+//wifi 设置
+"wifiName" = "WIFI名称";
+"wifiPassword" = "密码";
+"shareWifi" = "分享WIFI给朋友";
+"shareNote" = "扫描二维码自动识别";
+"wifiName" = "网络名称";
+"wifiNamePlaceholder" = "请输入网络名称";
+"wifiPsw" = "网络密码";
+"wifiPswPlaceholder" = "请输入密码";
+"wifiNameEmpty" = "请输入WIFI名称";
+"wifiPswError" = "请输入8位数字、字符";
+"wifiChangeSuccess" = "路由器信息修改成功";
+"wifiChangeFail" = "路由器信息修改失败";
+"wifiNameSpecial" = "WIFI名称禁止使用特殊字符";
+
+//移动网络设置
+"packageSetting" = "套餐设置";
+"packageStyle" = "首选模式";
+"forbideDataRoaming" = "禁止数据漫游";
+"more" = "更多";
+
+"netForbid" = "禁止网络";
+"netAuto" = "自动网络";
+"netNo" = "禁止";
+"netMonth" = "每月";
+"netUnlimited" = "无限制";
+"RangeNone" = "无限制";
+"Range10" = "剩余10%";
+"Range20" = "剩余20%";
+"Range30" = "剩余30%";
+"Range40" = "剩余40%";
+
+//密码设置
+"pswCurrent" = "当前密码";
+"pswCurrentPlaceholder" = "请输入原始密码";
+"pswNew" = "新密码";
+"pswNewPlaceholder" = "请输入新密码";
+"pswConfirm" = "确认密码";
+"pswConfirmPlaceholder" = "请再次输入密码";
+
+//路由器管理
+"routerReboot" = "重启路由器";
+"routerClose" = "关闭路由器";
+"routerRestoreFactory" = "恢复出厂设置";
+"routerUpdateConfig" = "更新路由器配置";
+"routerExportConfig" = "导出路由器配置";
+
+//意见反馈
+"opinionType" = "请选择问题分类";
+"opinionExpress" = "你的反馈，是我们每天进步的动力";
+"opinionNet" = "上网问题";
+"opinionData" = "流量问题";
+"opinionElectricity" = "电量问题";
+"opinionSmart" = "智能管理";
+"opinionProduct" = "产品建议";
+"opinionOther" = "其他";
+
+//套餐设置
+"dataHistoryNumber" = "历史总流量";
+"dataClear" = "清零";
+"dataExpress" = "流量统计进攻参考，实际流量以您的收费账单的额度为准";
+"dataPackageType" = "套餐设置类型";
+"dataPackageAmount" = "套餐流量";
+"dataAlarmRange" = "警戒范围";
+"dataManulAdjust" = "手动流量校正";
+
+"enterDataPlan" = "输入套餐流量";
+"enterManulPlan" = "输入校正流量";
+//设备列表
+"deviceAddBlackList" = "添加黑名单";
+"deviceRemoveBlackList" = "移除黑名单";
+"deviceRemark" = "备注";
+"deviceRemarkDefault" = "无备注";
+"deviceName" = "名称";
+"deviceMAC" = "MAC地址";
+"deviceIPAddress" = "IP地址";
+"deviceLinkType" = "连接类型";
+"deviceLinkTime" = "连接时长";
+"blackList" = "黑名单";
+"setRemark" = "是否要修改备注？";
+"remarkPlaceholder" = "请输入备注名称";
+//black list
+
+//device info
+"deviceInfo" = "设备详情";
+
+//信息列表
+"messageCreateNew" = "新建短信";
+"messageSend" = "发送短信";
+"messageReceiver" = "发消息给";
+"messagePhonePlaceholder" = "请输入电话号码";
+"messageDetail" = "短信详情";
+"send" = "发送";
+"sendSuccess" = "发送短信成功";
+"sendFail" = "发送短信失败";
+"delete" = "删除";
+"deleteSuccess" = "删除成功";
+"deleteFail" = "删除失败";
+//重启路由器
+"resetRouterWarningOne" = " 重启后将会中断当前所有连接，需要约1分钟才能恢复";
+"resetRouterWarningTwo" = "重启后可能需要手工连接路由器";
+"resetRouterConfirm" = "确认重启";
+"resetRouterWarning" = "是否确定重启路由器?";
+"wait" = "取消";
+"restart" = "重启";
+
+//close router
+"closeWarningOne" = "关闭后，将会中断当前所有连接";
+"closeWarningTwo" = "关闭后，再次长按电源键即可启动路由器";
+"closeRouter" = "关闭路由器";
+"close" = "关闭";
+"closeRouterWarning" = "是否确定关闭路由器?";
+
+//Factory reset
+"FactoryResetWarning" = "是否确定恢复出厂设置?";
+"FactoryResetWarningOne" = "恢复出厂设置将会清空所有数据";
+"buttonReset" = "是否恢复出厂设置";
+"buttonResetConfirm" = "确定";
+
+//关于
+"DeviceType" = "设备类型";
+"MACAddress" = "MAC地址";
+"IMEI" = "IMEI";
+"S/N" = "序列号";
+"SoftwareVersion" = "软件版本";
+"HardwareVersion" = "硬件版本";
+"ApplicationVersion" = "APP版本";
+"CopyRight" = "版权2018 LET International Limited 版权所有";
+
+//新主页设置
+"APPName" = "随身路由器";
+"RouterFlow" = "路由器流量";
+"RouterFlowUsed" = "已用流量";
+"RouterBattery" = "总电量";
+"RouterBatteryNow" = "路由器电量";
+"RouterBatteryCharging" = "路由器电量(充电)";
+"RouterBatteryChargeFully" = "路由器电量(已充满)";
+"RouterBatterySurplus" = "剩余";
+"MainTitleTwo" = "Wifi名称";
+"MainTitleThree" = "台连接设备";
+"MainTitleFour" = "条新短信";
+"RouterNoBattery" = "无电池";
+
+//SIM 状态
+"NetLost" = "无网络";
+"NetSIMAbsent" = "无SIM";
+"NetPINError" = "PIN错误";
+"NetPINNeed" = "PIN问题";
+"NetPUKNeed" = "PUK问题";
+"NetSIMLock" = "SIM已锁";
+"NetSIMError" = "SIM损坏";
+"NetUndefined" = "未知错误";
+"NetUnknow" = "未知网络";
+"NetReady" = "正常";
+"NetPINError" = "无SIM卡或未知错误";
+
+//更新相关
+"RouterSoftWareUpdate" = "路由器软件升级";
+"CustomerSoftWareUpdate" = "客户端软件升级";
+"Update" = "立刻更新";
+"UpdateNone" = "已是最新版本";
+"UpdateWarningOne" = "确保电量充足，网络连接良好";
+"UpdateWarningTwo" = "升级过程请不要锁屏或退出程序";
+
+//More
+"MoreNetworkOperator" = "网络运营商";
+"MoreOperatorChoose" = "选择网络运营商";
+"MoreAPN" = "APN设置";
+"MorePIN" = "PIN管理";
+
+//网络运营商
+"NetworkSearching" = "搜索...";
+"NetworkChoose" = "搜索网络";
+"NetworkChooseAll" = "搜索所有可用网络";
+"NetworkAutoChoose" = "自动选择";
+"NetworkAutoChooseFirst" = "自动选择首选网络";
+"NetSearchAlert" = "手动搜网将使网络断开，并需要较长时间，是否继续？";
+"NetCurrentNet" = "当前网络";
+"NetAuto" = "自动选择";
+
+
+//APN设置
+"APNAutoAdaptive" = "自动适配APN";
+"APNAutoAdaptiveOpen" = "已开启，将自动适配APN";
+"APNAutoAdaptiveClose" = "已关闭，将使用默认APN";
+"APNDefault" = "默认APN设置";
+
+//默认APN设置
+"APNName" = "名称";
+"APN" = "APN";
+"APNIPType" = "IP类型";
+"APNAuthType" = "鉴权类型";
+"APNUserName" = "用户名";
+"APNPsw" = "密码";
+
+"APNNameEmpty" = "APN名称不能为空";
+"APNUserNameEmpty" = "用户名不能为空";
+"APNUserPswEmpty" = "密码不能为空";
+"APNUserPswRule" = "密码应为8位以内字符串";
+
+//PIN管理
+"PINLock" = "锁定SIM卡";
+"PINNeedEnter" = "需要输入PIN才能使用";
+"PINChange" = "修改PIN码";
+
+//PIN
+"PINInput" = "请输入PIN码";
+"PINAttemptNumber" = "还可尝试";
+"PINAttemptTrail" = "次";
+"PINCurrent" = "当前PIN码";
+"PINNew" = "新PIN码";
+"PINCode" = "PIN码";
+
+"PINConfirm" = "确认PIN码";
+"PINEmpty" = "PIN码不能为空";
+"PINUnequal" = "PIN码输入不一致，请检查";
+"PINEqual" = "PIN新码与旧码重复，请检查";
+
+//PUK
+"PUKAlert" = "PIN码不可用，需要输入PUK码来开启PIN";
+"PUKInput" = "请输入PUK码";
+"PUKCurrent" = "PUK码";
+"PUKEmpty" = "PUK码不能为空";
+
+"PINCmdStatus0" = "操作成功";
+"PINCmdStatus1" = "操作成功";
+"PINCmdStatus2" = "SIM失败";
+"PINCmdStatus3" = "存储问题";
+"PINCmdStatus4" = "SIMAT忙碌";
+"PINCmdStatus4" = "请求信息非法";
+"PINCmdStatus5" = "SIM缺失";
+"PINCmdStatus6" = "需要输入SIM PIN";
+"PINCmdStatus7" = "需要输入SIM PUK";
+"PINCmdStatus8" = "SIM忙碌";
+"PINCmdStatus9" = "SIM出错";
+"PINCmdStatus10" = "PIN密码错误";
+"PINCmdStatus11" = "需要输入PIN码";
+"PINCmdStatus12" = "需要输入PUK码";
+"PINCmdStatus13" = "操作非法";
+"PINCmdStatus14" = "存储已满";
+"PINCmdStatus15" = "SIM未知问题";
+"PINCmdStatus16" = "操作失败，个性化定制无效导致";
+"PINCmdStatus17" = "操作失败，个性化定制锁定导致";
+"PINCmdStatus18" = "操作失败，个性化定制不支持";
+"PINCmdStatus19" = "卡禁入";
+"PINCmdStatus20" = "卡关机";
+"PINCmdStatus21" = "卡已移除";
+"PINCmdStatus22" = "卡充电";
+"PINCmdStatus23" = "卡不支持";
+"PINCmdStatus24" = "参数非法";
+"PINCmdStatus25" = "请求非法";
+"PINCmdStatus26" = "SIM未就位";
+"PINCmdStatus27" = "接通拒绝";
+"PINCmdStatus28" = "请求非法，字符串过长";
+//USSD
+"USSD" = "USSD";
+"ServiceInspective" = "检查服务";
+"USSDInput" = "请输入USSD命令";
+"USSDInvalid" = "拨号字符不符合标准，请检查。";
+//Show WIFI
+"WifiOne" = "1、打开 设置->无线网络,打开或者保持无线网开启;\n\n2、连接到设备对应无线网络之后，重新打开APP;";
+"WifiTwo" = "";

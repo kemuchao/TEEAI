@@ -1,0 +1,93 @@
+//
+//  CloseRouterViewController.m
+//  MifiManager
+//
+//  Created by notion on 2018/4/9.
+//  Copyright © 2018年 notion. All rights reserved.
+//
+
+#import "CloseRouterViewController.h"
+#import "LoginViewController.h"
+//#import "AppDelegate.h"
+#import "ActionView.h"
+#import "ResetView.h"
+#import "ImageLabel.h"
+@interface CloseRouterViewController ()
+
+@end
+
+@implementation CloseRouterViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.view setBackgroundColor:ColorWhite];
+}
+
+- (void)loadData{
+    if (![[NIUerInfoAndCommonSave getValueFromKey:ConnectMIFI] isEqualToString:NetValueMIFINet]) {
+        [self showWIFIAlert];
+        return;
+    }
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    NSString *url = [NSString stringWithFormat:@"%@", MIFI_CLOSE_ROUTER_PATH];
+    [NIHttpUtil get:url params:nil success:^(AFHTTPRequestOperation *operation, id responseObj) {
+        [self mbDismiss];
+        NILog(@"%@", operation.responseString);
+        BOOL check = [self checkLoginWithOperationResponse:operation.responseString];
+        if (check) {
+            [self showNeedRelogin];
+            return ;
+        }
+        [self dealGotoRoot];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self mbDismiss];
+        [self mbShowToast:error.localizedDescription];
+    }];
+}
+
+
+- (IBAction)closeAction:(id)sender {
+    [self showAlert];
+}
+
+- (void)showAlert{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示"message:@"关闭路由器" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *cancel){
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [alert addAction:cancel];
+    UIAlertAction *confirm = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *confirm){
+        [self loadData];
+    }];
+    [alert addAction:confirm];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (NSMutableAttributedString *)dealAddImage:(UIImage *)image text:(NSString *)text{
+    NSTextAttachment *attchImage = [[NSTextAttachment alloc] init];
+    attchImage.image = image;
+    attchImage.bounds = [self dealGetFrameWithX:0 Y:-5 Width:HeightLabel Height:HeightLabel];
+    NSAttributedString *imageAtt = [NSAttributedString attributedStringWithAttachment:attchImage];
+    NSMutableAttributedString *space = [[NSMutableAttributedString alloc] initWithString:text];
+    [space insertAttributedString:imageAtt atIndex:0];
+    return space;
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

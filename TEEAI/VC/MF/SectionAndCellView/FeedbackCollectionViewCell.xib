@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeedbackCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nBL-5J-5Sq">
+                        <rect key="frame" x="33" y="25.5" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nBL-5J-5Sq" secondAttribute="height" id="lEr-Ds-Hxo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n80-ut-YK5">
+                        <rect key="frame" x="0.0" y="107.5" width="120" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="n80-ut-YK5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9kn-YN-0aO"/>
+                <constraint firstItem="n80-ut-YK5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="1.6" id="Jkl-xG-kik"/>
+                <constraint firstItem="nBL-5J-5Sq" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.45" id="aqd-6I-9L5"/>
+                <constraint firstItem="nBL-5J-5Sq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" multiplier="0.7" id="bal-h6-ml4"/>
+                <constraint firstItem="nBL-5J-5Sq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="p6X-X2-9WC"/>
+                <constraint firstItem="n80-ut-YK5" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="u4U-F0-h18"/>
+            </constraints>
+            <size key="customSize" width="133" height="118"/>
+            <connections>
+                <outlet property="imageIcon" destination="nBL-5J-5Sq" id="dd2-Kn-rGx"/>
+                <outlet property="labelTitle" destination="n80-ut-YK5" id="kbU-Gs-mAd"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="29"/>
+        </collectionViewCell>
+    </objects>
+</document>

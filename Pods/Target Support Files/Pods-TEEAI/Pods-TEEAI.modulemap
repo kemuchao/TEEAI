@@ -1,0 +1,6 @@
+framework module Pods_TEEAI {
+  umbrella header "Pods-TEEAI-umbrella.h"
+
+  export *
+  module * { export * }
+}
