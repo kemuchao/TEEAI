@@ -16,13 +16,13 @@ import Photos
 typealias Mapper = ObjectMapper.Mapper
 
 #if DEV
-let kBaseURLString            = "https://clienttest.tee.com"
+let kBaseURLString            = ""
 #elseif QA
-let kBaseURLString            = "https://clienttest.tee.com"
+let kBaseURLString            = ""
 #elseif SIM
-let kBaseURLString            = "https://clienttest.tee.com"
+let kBaseURLString            = ""
 #else
-let kBaseURLString            = "https://clienttest.tee.com"
+let kBaseURLString            = ""
 #endif
 
 
